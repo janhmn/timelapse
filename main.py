@@ -5,6 +5,7 @@ from picamera2 import Picamera2
 with Picamera2() as camera:
     # Optional: Set resolution
     camera.resolution = (1024, 768)
+    camera.start()
 
     # Camera warm-up time (essential for exposure/white balance)
     time.sleep(2)
