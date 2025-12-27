@@ -9,7 +9,7 @@ with Picamera2() as camera:
     # Camera warm-up time (essential for exposure/white balance)
     time.sleep(2)
 
-    for i in range(360):
+    for i in range(480):
         print(i)
         camera.capture_file("src/image{0:04d}.jpg".format(i))
         time.sleep(29)
